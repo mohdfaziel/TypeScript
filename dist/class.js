@@ -4,17 +4,15 @@ class Student {
         this.name = name;
         this.rollNo = rollNo;
         this.age = age;
+        this.Id = Math.ceil(Math.random() * 100);
     }
-    getName() {
-        return this.name;
-    }
-    getRollNo() {
-        return this.rollNo;
-    }
-    getAge() {
-        return this.age;
+    getId() {
+        return this.Id;
     }
 }
 let s1 = new Student("Faziel", 107, 22);
 let s2 = new Student("Saquib", 103, 20);
-console.log(s1.getName(), s2.getName());
+console.log(s1.getId());
+console.log(s2.getId());
+s1.name = "sahil";
+console.log(s1);
