@@ -24,3 +24,4 @@ type t2 = string | boolean;
 
 let s2 : t1 & t2 = "Faziel"
 let s3 : t1 | t2 = 23
+console.log(u1,u2,s2,s3);
